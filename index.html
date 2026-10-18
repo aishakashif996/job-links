@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Trusted Sites for Teaching and Developer Jobs</title>
+<title>Trusted Sites for Developers, Remote Work and Freelancing</title>
 <style>
 :root{--bg:#f6f8f7;--surface:#ffffff;--ink:#14302b;--muted:#4f6560;--line:#cfdcd8;--accent:#0b6b5c;--warn-bg:#fff4e0;--warn-ink:#6b4300;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a18;--surface:#17262a;--ink:#e6f1ee;--muted:#9fb8b2;--line:#2a4440;--accent:#5fd1bb;--warn-bg:#2b2412;--warn-ink:#f2d596}}
@@ -29,33 +29,8 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;font-family:system-ui
 </head>
 <body>
 <main>
-<h1>Trusted sites for teaching and developer jobs</h1>
-
-<h2>Teaching and tutoring</h2>
-<ul>
-<li><a class="link" href="https://preply.com" target="_blank" rel="noopener noreferrer"><b>Preply</b><span>Online tutoring marketplace</span></a></li>
-<li><a class="link" href="https://www.superprof.com" target="_blank" rel="noopener noreferrer"><b>Superprof</b><span>Create a tutor profile, students contact you</span></a></li>
-<li><a class="link" href="https://www.wyzant.com" target="_blank" rel="noopener noreferrer"><b>Wyzant</b><span>Tutoring in maths, science and more</span></a></li>
-<li><a class="link" href="https://www.hec.gov.pk" target="_blank" rel="noopener noreferrer"><b>HEC Pakistan</b><span>University and lecturer positions</span></a></li>
-</ul>
-
-<h2>Developer and freelance work</h2>
-<ul>
-<li><a class="link" href="https://www.linkedin.com/jobs" target="_blank" rel="noopener noreferrer"><b>LinkedIn Jobs</b><span>Company-verified job listings</span></a></li>
-<li><a class="link" href="https://www.upwork.com" target="_blank" rel="noopener noreferrer"><b>Upwork</b><span>Freelance projects with protected payments</span></a></li>
-<li><a class="link" href="https://www.fiverr.com" target="_blank" rel="noopener noreferrer"><b>Fiverr</b><span>Sell your skills as services</span></a></li>
-<li><a class="link" href="https://www.freelancer.com" target="_blank" rel="noopener noreferrer"><b>Freelancer</b><span>Bid on freelance projects</span></a></li>
-<li><a class="link" href="https://weworkremotely.com" target="_blank" rel="noopener noreferrer"><b>We Work Remotely</b><span>Remote developer roles</span></a></li>
-<li><a class="link" href="https://remotive.com" target="_blank" rel="noopener noreferrer"><b>Remotive</b><span>Remote tech jobs</span></a></li>
-<li><a class="link" href="https://wellfound.com" target="_blank" rel="noopener noreferrer"><b>Wellfound</b><span>Startup jobs</span></a></li>
-</ul>
-
-<h2>Jobs in Pakistan</h2>
-<ul>
-<li><a class="link" href="https://www.rozee.pk" target="_blank" rel="noopener noreferrer"><b>Rozee.pk</b><span>Jobs across Pakistan, including teaching</span></a></li>
-<li><a class="link" href="https://www.mustakbil.com" target="_blank" rel="noopener noreferrer"><b>Mustakbil</b><span>Pakistan job listings</span></a></li>
-<li><a class="link" href="https://pk.indeed.com" target="_blank" rel="noopener noreferrer"><b>Indeed Pakistan</b><span>Local and remote listings</span></a></li>
-</ul>
+<h1>Trusted sites for developers, remote work and freelancing</h1>
+<div id="list"></div>
 
 <section class="safe">
 <h2>Stay safe when applying</h2>
@@ -70,5 +45,88 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;font-family:system-ui
 
 <footer>Shared by Aisha Kashif</footer>
 </main>
+
+<script>
+var data=[
+["Remote and online jobs",[
+["LinkedIn Jobs","https://www.linkedin.com/jobs","Company-verified listings, filter by Remote"],
+["Indeed","https://www.indeed.com","Large global job search"],
+["We Work Remotely","https://weworkremotely.com","Remote jobs, including programming"],
+["Remote OK","https://remoteok.com","Remote tech jobs"],
+["Remotive","https://remotive.com","Curated remote jobs"],
+["Working Nomads","https://workingnomads.com","Remote jobs from around the world"],
+["Remote.co","https://remote.co","Remote listings in many fields"],
+["Himalayas","https://himalayas.app","Remote jobs, filter by country"],
+["JustRemote","https://justremote.co","Remote jobs, free to browse"],
+["Wellfound","https://wellfound.com","Startup jobs, many remote"],
+["Work at a Startup","https://www.workatastartup.com","Jobs at Y Combinator startups"]]],
+["Freelance platforms",[
+["Upwork","https://www.upwork.com","Largest freelance marketplace"],
+["Fiverr","https://www.fiverr.com","Sell your services as packages"],
+["Freelancer","https://www.freelancer.com","Bid on projects worldwide"],
+["PeoplePerHour","https://www.peopleperhour.com","Clients in the UK and Europe"],
+["Guru","https://www.guru.com","Freelance projects, free to join"],
+["Contra","https://contra.com","Free portfolio, clients pay you directly"],
+["Malt","https://www.malt.com","European freelance marketplace"]]],
+["Vetted developer networks (free to apply, selective)",[
+["Arc","https://arc.dev","Remote developer jobs"],
+["Toptal","https://www.toptal.com","Top freelance talent network"],
+["Turing","https://www.turing.com","Remote developer jobs with US companies"],
+["Braintrust","https://www.usebraintrust.com","Freelance tech talent network"],
+["Gun.io","https://gun.io","Vetted freelance developers"],
+["Lemon.io","https://lemon.io","Startups hire vetted developers"],
+["Flexiple","https://flexiple.com","Freelance developers and designers"]]],
+["Finding international clients",[
+["LinkedIn","https://www.linkedin.com","Connect with founders and message them directly"],
+["Clutch","https://clutch.co","Directory of app and software agencies"],
+["Product Hunt","https://www.producthunt.com","Find new startups that need developers"],
+["Indie Hackers","https://www.indiehackers.com","Founder community, share your services"],
+["r/forhire","https://www.reddit.com/r/forhire","Clients post jobs, you can post your skills"],
+["GitHub","https://github.com","Your code is your portfolio"],
+["Dev.to","https://dev.to","Write posts to get noticed"]]],
+["Mobile app development",[
+["Flutter","https://flutter.dev","Official Flutter docs and samples"],
+["Dart","https://dart.dev","Official Dart language guide"],
+["pub.dev","https://pub.dev","Flutter and Dart packages"],
+["Android Developers","https://developer.android.com","Official Android docs and courses"],
+["Apple Developer","https://developer.apple.com","Official iOS docs"],
+["Firebase","https://firebase.google.com","Backend tools for mobile apps"],
+["Google Play Console","https://play.google.com/console","Publish your Android apps"]]],
+["Programming and practice",[
+["freeCodeCamp","https://www.freecodecamp.org","Free coding courses"],
+["MDN Web Docs","https://developer.mozilla.org","Web development reference"],
+["roadmap.sh","https://roadmap.sh","Step-by-step developer roadmaps"],
+["LeetCode","https://leetcode.com","Coding practice"],
+["HackerRank","https://www.hackerrank.com","Coding practice and skill badges"],
+["Kaggle","https://www.kaggle.com","Data science practice and datasets"],
+["Stack Overflow","https://stackoverflow.com","Programming questions and answers"],
+["FastAPI docs","https://fastapi.tiangolo.com","Official FastAPI documentation"]]],
+["Jobs in Pakistan",[
+["Rozee.pk","https://www.rozee.pk","Jobs across Pakistan"],
+["Mustakbil","https://www.mustakbil.com","Pakistan job listings"],
+["Indeed Pakistan","https://pk.indeed.com","Local and remote listings"],
+["DigiSkills","https://digiskills.pk","Free skills training and freelancing courses"]]],
+["Teaching and tutoring",[
+["Preply","https://preply.com","Online tutoring marketplace"],
+["Superprof","https://www.superprof.com","Create a tutor profile, students contact you"],
+["Wyzant","https://www.wyzant.com","Tutoring in maths, science and more"],
+["Outschool","https://outschool.com","Teach online classes to students abroad"],
+["HEC Pakistan","https://www.hec.gov.pk","University and lecturer positions"]]]
+];
+var root=document.getElementById("list");
+data.forEach(function(sec){
+var h=document.createElement("h2");h.textContent=sec[0];root.appendChild(h);
+var ul=document.createElement("ul");
+sec[1].forEach(function(it){
+var li=document.createElement("li");
+var a=document.createElement("a");
+a.className="link";a.href=it[1];a.target="_blank";a.rel="noopener noreferrer";
+var b=document.createElement("b");b.textContent=it[0];
+var s=document.createElement("span");s.textContent=it[2];
+a.appendChild(b);a.appendChild(s);li.appendChild(a);ul.appendChild(li);
+});
+root.appendChild(ul);
+});
+</script>
 </body>
 </html>
